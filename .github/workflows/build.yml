@@ -18,30 +18,19 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
       
-      - uses: gradle/actions/setup-gradle@v3
-        with:
-          gradle-version: 8.8
-      
       - name: Make gradlew executable
         run: chmod +x gradlew
       
+      - name: Verify gradle wrapper
+        run: ls -la gradle/wrapper/gradle-wrapper.jar
+      
       - name: Build Fabric Mod
-        run: ./gradlew clean build
+        run: ./gradlew --version && ./gradlew clean build
       
       - name: Upload Artifact
+        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: fluttershyvisual
           path: build/libs/*.jar
           retention-days: 30
-      
-      - name: Create Release
-        if: success()
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: v1.0.0-${{ github.run_number }}
-          release_name: FluttershyVisual Build ${{ github.run_number }}
-          draft: false
-          prerelease: false
