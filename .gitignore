@@ -1,6 +1,5 @@
 ﻿.gradle/
 build/
-gradle-*.zip
 *.ps1
 CHECKLIST.txt
 FINAL_INSTRUCTIONS.txt
