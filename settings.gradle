@@ -1,6 +1,7 @@
 pluginManagement {
 	repositories {
 		mavenLocal()
+		gradlePluginPortal()
 		maven { 
 			url = "https://maven.fabricmc.net/"
 			metadataSources {
@@ -12,7 +13,13 @@ pluginManagement {
 			url = "https://maven.neoforged.net/releases"
 		}
 		mavenCentral()
-		gradlePluginPortal()
+	}
+	resolutionStrategy {
+		eachPlugin {
+			if (it.requested.id.namespace == 'fabric-loom') {
+				it.useModule("net.fabricmc:fabric-loom:${it.requested.version}")
+			}
+		}
 	}
 }
 
