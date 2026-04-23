@@ -1,0 +1,165 @@
+╔════════════════════════════════════════════════════════════════╗
+║    FLUTTERSHYVISUAL FABRIC MOD - GITHUB ACTIONS WORKFLOW        ║
+╚════════════════════════════════════════════════════════════════╝
+
+✅ ВСЕ ФАЙЛЫ ГОТОВЫ К ЗАГРУЗКЕ НА GITHUB
+
+📁 СТРУКТУРА ПРОЕКТА:
+──────────────────────────────────────────────────────────────────
+c:\Users\Admin\Desktop\fsv\
+├── .github/
+│   └── workflows/
+│       └── build.yml              ✅ GitHub Actions workflow
+├── src/
+│   ├── main/java/                 ✅ 31 модуль + система
+│   └── main/resources/            ✅ Конфиги и ресурсы
+├── build.gradle                   ✅ Gradle конфиг
+├── gradle.properties              ✅ Версии
+├── settings.gradle                ✅ Репозитории
+├── gradlew & gradlew.bat          ✅ Gradle wrapper
+└── github-upload.ps1              ✅ Скрипт для загрузки
+
+🚀 БЫСТРЫЙ СТАРТ:
+──────────────────────────────────────────────────────────────────
+
+ВАРИАНТ 1: Автоматическая загрузка (Windows PowerShell)
+═════════════════════════════════════════════════════════════════
+
+1. Откройте PowerShell
+2. Выполните:
+
+   cd c:\Users\Admin\Desktop\fsv
+   .\github-upload.ps1
+
+3. Введите GitHub логин и Personal Access Token (PAT)
+   https://github.com/settings/tokens/new?scopes=repo,workflow
+
+4. Ждите сборки на https://github.com/YOUR_LOGIN/fluttershyvisual/actions
+
+───────────────────────────────────────────────────────────────
+
+ВАРИАНТ 2: Ручная загрузка
+═════════════════════════════════════════════════════════════════
+
+1. Создайте репозиторий на GitHub:
+   https://github.com/new
+   - Name: fluttershyvisual
+   - Visibility: Public
+
+2. В PowerShell выполните:
+
+   cd c:\Users\Admin\Desktop\fsv
+   
+   $login = "YOUR_GITHUB_LOGIN"
+   $token = "YOUR_PAT_TOKEN"
+   
+   $git = "C:\Program Files\Git\bin\git.exe"
+   &$git remote add origin "https://$login`:$token@github.com/$login/fluttershyvisual.git"
+   &$git branch -M main
+   &$git push -u origin main
+
+3. Ждите сборки: https://github.com/$login/fluttershyvisual/actions
+
+───────────────────────────────────────────────────────────────
+
+ВАРИАНТ 3: Через GitHub Desktop
+═════════════════════════════════════════════════════════════════
+
+1. Установите GitHub Desktop: https://desktop.github.com
+2. Откройте File > Clone repository
+3. Выберите Local path: c:\Users\Admin\Desktop\fsv
+4. Нажмите "Publish repository"
+5. Ждите сборки на GitHub
+
+───────────────────────────────────────────────────────────────
+
+📊 ЧТО ДЕЛАЕТ GITHUB ACTIONS:
+══════════════════════════════════════════════════════════════
+
+GitHub Actions автоматически при каждом push:
+
+1. ✅ Устанавливает Java 21 (Temurin)
+2. ✅ Скачивает Gradle
+3. ✅ Запускает: ./gradlew clean build
+4. ✅ Создает JAR файл
+5. ✅ Загружает артефакт
+6. ✅ Создает Release
+
+⏱️ ВРЕМЯ СБОРКИ: 5-15 минут
+
+─────────────────────────────────────────────────────────────
+
+📦 СКАЧИВАНИЕ JAR ПОСЛЕ СБОРКИ:
+═════════════════════════════════════════════════════════════════
+
+1. Откройте: https://github.com/YOUR_LOGIN/fluttershyvisual/actions
+
+2. Нажмите на успешный workflow run (зеленая галочка)
+
+3. Прокрутите вниз до "Artifacts"
+
+4. Скачайте "fluttershyvisual" (ZIP)
+
+5. Распакуйте архив
+
+6. Найдите fluttershyvisual-1.0.0.jar
+
+7. Скопируйте в: %APPDATA%\.minecraft\mods\
+
+8. Запустите Minecraft с Fabric!
+
+─────────────────────────────────────────────────────────────
+
+🎮 ИСПОЛЬЗОВАНИЕ МОДА:
+═════════════════════════════════════════════════════════════════
+
+1. Нажмите RIGHT SHIFT в игре
+2. Откроется ClickGUI с 4 категориями:
+   - RENDER (8 модулей)
+   - HELPER (13 модулей)
+   - VISUALS (4 модуля)
+   - GAMEPLAY (6 модулей)
+3. Кликайте на модули для включения/выключения
+4. Конфиг сохраняется автоматически в: config/fluttershyvisual/
+
+─────────────────────────────────────────────────────────────
+
+❓ ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ:
+═════════════════════════════════════════════════════════════════
+
+Q: Как получить GitHub Personal Access Token (PAT)?
+A: https://github.com/settings/tokens/new
+   - Выберите scopes: repo + workflow
+   - Скопируйте токен (используйте сразу!)
+
+Q: Сборка падает с ошибкой - что делать?
+A: Проверьте:
+   - Правильный GitHub токен
+   - Репозиторий создан на GitHub
+   - Интернет соединение
+
+Q: Сборка долго - это нормально?
+A: Да! Первая сборка может занять 10-15 минут
+   Последующие - 5-10 минут
+
+Q: Где найти мой GitHub логин?
+A: https://github.com/settings/profile
+   Это ваше имя пользователя в URL
+
+─────────────────────────────────────────────────────────────
+
+📞 ПОДДЕРЖКА:
+═════════════════════════════════════════════════════════════════
+
+Если что-то не работает:
+
+1. Проверьте README.md
+2. Смотрите BUILD_INSTRUCTIONS.md
+3. Проверьте статус на GitHub Actions
+4. Смотрите логи сборки
+
+─────────────────────────────────────────────────────────────
+
+✨ ВСЕ ГОТОВО К СБОРКЕ!
+
+Выполняйте ВАРИАНТ 1, 2 или 3 выше и ждите готовый JAR файл! 🚀

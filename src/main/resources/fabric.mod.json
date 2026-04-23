@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "fluttershyvisual",
+  "version": "${version}",
+  "name": "FluttershyVisual",
+  "description": "Advanced visual enhancement and helper mod for Minecraft 1.21.4",
+  "authors": [
+    "FluttershyVisual Team"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+  "license": "MIT",
+  "icon": "assets/fluttershyvisual/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "ru.fluttershy.visual.FsvMod"
+    ],
+    "client": [
+      "ru.fluttershy.visual.FsvClientMod"
+    ]
+  },
+  "mixins": [
+    "fluttershyvisual.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${fabric_loader_version}",
+    "minecraft": "${minecraft_version}",
+    "java": ">=21"
+  }
+}
