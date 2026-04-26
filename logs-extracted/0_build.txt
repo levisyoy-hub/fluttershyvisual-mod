@@ -1,0 +1,226 @@
+﻿2026-04-23T20:03:56.8302121Z Current runner version: '2.333.1'
+2026-04-23T20:03:56.8329328Z ##[group]Runner Image Provisioner
+2026-04-23T20:03:56.8330144Z Hosted Compute Agent
+2026-04-23T20:03:56.8330737Z Version: 20260213.493
+2026-04-23T20:03:56.8331400Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+2026-04-23T20:03:56.8332098Z Build Date: 2026-02-13T00:28:41Z
+2026-04-23T20:03:56.8332790Z Worker ID: {afaa65fe-a8ea-430d-a942-839e40940bea}
+2026-04-23T20:03:56.8333445Z Azure Region: eastus2
+2026-04-23T20:03:56.8334348Z ##[endgroup]
+2026-04-23T20:03:56.8335717Z ##[group]Operating System
+2026-04-23T20:03:56.8336324Z Ubuntu
+2026-04-23T20:03:56.8336828Z 24.04.4
+2026-04-23T20:03:56.8337399Z LTS
+2026-04-23T20:03:56.8337831Z ##[endgroup]
+2026-04-23T20:03:56.8338324Z ##[group]Runner Image
+2026-04-23T20:03:56.8338947Z Image: ubuntu-24.04
+2026-04-23T20:03:56.8339430Z Version: 20260413.86.1
+2026-04-23T20:03:56.8340746Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260413.86/images/ubuntu/Ubuntu2404-Readme.md
+2026-04-23T20:03:56.8342124Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260413.86
+2026-04-23T20:03:56.8343120Z ##[endgroup]
+2026-04-23T20:03:56.8344393Z ##[group]GITHUB_TOKEN Permissions
+2026-04-23T20:03:56.8346554Z Contents: read
+2026-04-23T20:03:56.8347200Z Metadata: read
+2026-04-23T20:03:56.8347700Z Packages: read
+2026-04-23T20:03:56.8348222Z ##[endgroup]
+2026-04-23T20:03:56.8350277Z Secret source: Actions
+2026-04-23T20:03:56.8351363Z Prepare workflow directory
+2026-04-23T20:03:56.8687263Z Prepare all required actions
+2026-04-23T20:03:56.8725954Z Getting action download info
+2026-04-23T20:03:57.2709798Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2026-04-23T20:03:57.4188040Z Download action repository 'actions/setup-java@v4' (SHA:c1e323688fd81a25caa38c78aa6df2d33d3e20d9)
+2026-04-23T20:03:57.7832574Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-04-23T20:03:58.0105568Z Complete job name: build
+2026-04-23T20:03:58.0840021Z ##[group]Run actions/checkout@v4
+2026-04-23T20:03:58.0840884Z with:
+2026-04-23T20:03:58.0841384Z   repository: levisyoy-hub/fluttershyvisual-mod
+2026-04-23T20:03:58.0842254Z   token: ***
+2026-04-23T20:03:58.0842693Z   ssh-strict: true
+2026-04-23T20:03:58.0843139Z   ssh-user: git
+2026-04-23T20:03:58.0843595Z   persist-credentials: true
+2026-04-23T20:03:58.0844531Z   clean: true
+2026-04-23T20:03:58.0844983Z   sparse-checkout-cone-mode: true
+2026-04-23T20:03:58.0845555Z   fetch-depth: 1
+2026-04-23T20:03:58.0845989Z   fetch-tags: false
+2026-04-23T20:03:58.0846452Z   show-progress: true
+2026-04-23T20:03:58.0846897Z   lfs: false
+2026-04-23T20:03:58.0847312Z   submodules: false
+2026-04-23T20:03:58.0847763Z   set-safe-directory: true
+2026-04-23T20:03:58.0848565Z ##[endgroup]
+2026-04-23T20:03:58.1935224Z Syncing repository: levisyoy-hub/fluttershyvisual-mod
+2026-04-23T20:03:58.1937718Z ##[group]Getting Git version info
+2026-04-23T20:03:58.1938795Z Working directory is '/home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod'
+2026-04-23T20:03:58.1940101Z [command]/usr/bin/git version
+2026-04-23T20:03:58.2053511Z git version 2.53.0
+2026-04-23T20:03:58.2078549Z ##[endgroup]
+2026-04-23T20:03:58.2093934Z Temporarily overriding HOME='/home/runner/work/_temp/d63bfa10-0e2d-4bc3-a040-6bc2b15ae04e' before making global git config changes
+2026-04-23T20:03:58.2107169Z Adding repository directory to the temporary git global config as a safe directory
+2026-04-23T20:03:58.2108736Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod
+2026-04-23T20:03:58.2141249Z Deleting the contents of '/home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod'
+2026-04-23T20:03:58.2144991Z ##[group]Initializing the repository
+2026-04-23T20:03:58.2149206Z [command]/usr/bin/git init /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod
+2026-04-23T20:03:58.2207006Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-04-23T20:03:58.2209122Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-04-23T20:03:58.2210237Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-04-23T20:03:58.2211294Z hint: call:
+2026-04-23T20:03:58.2211981Z hint:
+2026-04-23T20:03:58.2212892Z hint: 	git config --global init.defaultBranch <name>
+2026-04-23T20:03:58.2214080Z hint:
+2026-04-23T20:03:58.2214933Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-04-23T20:03:58.2216039Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-04-23T20:03:58.2217015Z hint:
+2026-04-23T20:03:58.2217506Z hint: 	git branch -m <name>
+2026-04-23T20:03:58.2218006Z hint:
+2026-04-23T20:03:58.2218679Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-04-23T20:03:58.2220496Z Initialized empty Git repository in /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/.git/
+2026-04-23T20:03:58.2222652Z [command]/usr/bin/git remote add origin https://github.com/levisyoy-hub/fluttershyvisual-mod
+2026-04-23T20:03:58.2251899Z ##[endgroup]
+2026-04-23T20:03:58.2253077Z ##[group]Disabling automatic garbage collection
+2026-04-23T20:03:58.2255260Z [command]/usr/bin/git config --local gc.auto 0
+2026-04-23T20:03:58.2284614Z ##[endgroup]
+2026-04-23T20:03:58.2285875Z ##[group]Setting up auth
+2026-04-23T20:03:58.2291009Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-04-23T20:03:58.2321288Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-04-23T20:03:58.2638725Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-04-23T20:03:58.2672355Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-04-23T20:03:58.2904224Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-04-23T20:03:58.2938582Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-04-23T20:03:58.3173930Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-04-23T20:03:58.3208811Z ##[endgroup]
+2026-04-23T20:03:58.3216525Z ##[group]Fetching the repository
+2026-04-23T20:03:58.3218183Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +b726ca938de91a379e33e0782d45f37f74619419:refs/remotes/origin/main
+2026-04-23T20:04:00.8798966Z From https://github.com/levisyoy-hub/fluttershyvisual-mod
+2026-04-23T20:04:00.8800765Z  * [new ref]         b726ca938de91a379e33e0782d45f37f74619419 -> origin/main
+2026-04-23T20:04:00.8829350Z ##[endgroup]
+2026-04-23T20:04:00.8830101Z ##[group]Determining the checkout info
+2026-04-23T20:04:00.8831615Z ##[endgroup]
+2026-04-23T20:04:00.8837322Z [command]/usr/bin/git sparse-checkout disable
+2026-04-23T20:04:00.8875299Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-04-23T20:04:00.8902056Z ##[group]Checking out the ref
+2026-04-23T20:04:00.8906722Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-04-23T20:04:01.5338975Z Switched to a new branch 'main'
+2026-04-23T20:04:01.5339627Z branch 'main' set up to track 'origin/main'.
+2026-04-23T20:04:01.5392545Z ##[endgroup]
+2026-04-23T20:04:01.5438930Z [command]/usr/bin/git log -1 --format=%H
+2026-04-23T20:04:01.5465813Z b726ca938de91a379e33e0782d45f37f74619419
+2026-04-23T20:04:01.5722392Z ##[group]Run actions/setup-java@v4
+2026-04-23T20:04:01.5722731Z with:
+2026-04-23T20:04:01.5722928Z   java-version: 21
+2026-04-23T20:04:01.5723148Z   distribution: temurin
+2026-04-23T20:04:01.5723363Z   java-package: jdk
+2026-04-23T20:04:01.5724053Z   check-latest: false
+2026-04-23T20:04:01.5724261Z   server-id: github
+2026-04-23T20:04:01.5724484Z   server-username: GITHUB_ACTOR
+2026-04-23T20:04:01.5724743Z   server-password: GITHUB_TOKEN
+2026-04-23T20:04:01.5725008Z   overwrite-settings: true
+2026-04-23T20:04:01.5725247Z   job-status: success
+2026-04-23T20:04:01.5725604Z   token: ***
+2026-04-23T20:04:01.5725824Z ##[endgroup]
+2026-04-23T20:04:01.7722965Z ##[group]Installed distributions
+2026-04-23T20:04:01.8099479Z Resolved Java 21.0.10+7 from tool-cache
+2026-04-23T20:04:01.8100056Z Setting Java 21.0.10+7 as the default
+2026-04-23T20:04:01.8113203Z Creating toolchains.xml for JDK version 21 from temurin
+2026-04-23T20:04:01.8190291Z Writing to /home/runner/.m2/toolchains.xml
+2026-04-23T20:04:01.8191046Z 
+2026-04-23T20:04:01.8191247Z Java configuration:
+2026-04-23T20:04:01.8192492Z   Distribution: temurin
+2026-04-23T20:04:01.8192889Z   Version: 21.0.10+7
+2026-04-23T20:04:01.8193510Z   Path: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.10-7/x64
+2026-04-23T20:04:01.8194202Z 
+2026-04-23T20:04:01.8194711Z ##[endgroup]
+2026-04-23T20:04:01.8209808Z Creating settings.xml with server-id: github
+2026-04-23T20:04:01.8214159Z Writing to /home/runner/.m2/settings.xml
+2026-04-23T20:04:01.8321856Z ##[group]Run chmod +x gradlew
+2026-04-23T20:04:01.8322214Z [36;1mchmod +x gradlew[0m
+2026-04-23T20:04:01.8350686Z shell: /usr/bin/bash -e {0}
+2026-04-23T20:04:01.8350946Z env:
+2026-04-23T20:04:01.8351258Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.10-7/x64
+2026-04-23T20:04:01.8351742Z   JAVA_HOME_21_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.10-7/x64
+2026-04-23T20:04:01.8352104Z ##[endgroup]
+2026-04-23T20:04:01.8537110Z ##[group]Run ls -la gradle/wrapper/gradle-wrapper.jar
+2026-04-23T20:04:01.8537550Z [36;1mls -la gradle/wrapper/gradle-wrapper.jar[0m
+2026-04-23T20:04:01.8560759Z shell: /usr/bin/bash -e {0}
+2026-04-23T20:04:01.8561004Z env:
+2026-04-23T20:04:01.8561305Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.10-7/x64
+2026-04-23T20:04:01.8561777Z   JAVA_HOME_21_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.10-7/x64
+2026-04-23T20:04:01.8562139Z ##[endgroup]
+2026-04-23T20:04:01.8620178Z -rw-r--r-- 1 runner runner 48966 Apr 23 20:04 gradle/wrapper/gradle-wrapper.jar
+2026-04-23T20:04:01.8648734Z ##[group]Run ./gradlew --version && ./gradlew clean build
+2026-04-23T20:04:01.8649152Z [36;1m./gradlew --version && ./gradlew clean build[0m
+2026-04-23T20:04:01.8671106Z shell: /usr/bin/bash -e {0}
+2026-04-23T20:04:01.8671351Z env:
+2026-04-23T20:04:01.8671660Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.10-7/x64
+2026-04-23T20:04:01.8672132Z   JAVA_HOME_21_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.10-7/x64
+2026-04-23T20:04:01.8672498Z ##[endgroup]
+2026-04-23T20:04:03.0452468Z Downloading https://services.gradle.org/distributions/gradle-8.8-bin.zip
+2026-04-23T20:04:05.9444597Z .............10%.............20%.............30%.............40%.............50%.............60%..............70%.............80%.............90%.............100%
+2026-04-23T20:04:07.2820218Z 
+2026-04-23T20:04:07.2820902Z Welcome to Gradle 8.8!
+2026-04-23T20:04:07.2821206Z 
+2026-04-23T20:04:07.2821959Z Here are the highlights of this release:
+2026-04-23T20:04:07.2822701Z  - Running Gradle on Java 22
+2026-04-23T20:04:07.2823357Z  - Configurable Gradle daemon JVM
+2026-04-23T20:04:07.2845029Z  - Improved IDE performance for large projects
+2026-04-23T20:04:07.2845398Z 
+2026-04-23T20:04:07.2846529Z For more details see https://docs.gradle.org/8.8/release-notes.html
+2026-04-23T20:04:07.2846978Z 
+2026-04-23T20:04:07.2847136Z 
+2026-04-23T20:04:07.2848575Z ------------------------------------------------------------
+2026-04-23T20:04:07.2849019Z Gradle 8.8
+2026-04-23T20:04:07.2850562Z ------------------------------------------------------------
+2026-04-23T20:04:07.2851010Z 
+2026-04-23T20:04:07.2851818Z Build time:   2024-05-31 21:46:56 UTC
+2026-04-23T20:04:07.2852955Z Revision:     4bd1b3d3fc3f31db5a26eecb416a165b8cc36082
+2026-04-23T20:04:07.2854405Z 
+2026-04-23T20:04:07.2854751Z Kotlin:       1.9.22
+2026-04-23T20:04:07.2860211Z Groovy:       3.0.21
+2026-04-23T20:04:07.2884556Z Ant:          Apache Ant(TM) version 1.10.13 compiled on January 4 2023
+2026-04-23T20:04:07.2885225Z JVM:          21.0.10 (Eclipse Adoptium 21.0.10+7-LTS)
+2026-04-23T20:04:07.2885707Z OS:           Linux 6.17.0-1010-azure amd64
+2026-04-23T20:04:07.2886001Z 
+2026-04-23T20:04:08.0874158Z Starting a Gradle Daemon (subsequent builds will be faster)
+2026-04-23T20:04:14.8934800Z 
+2026-04-23T20:04:14.8940411Z FAILURE: Build failed with an exception.
+2026-04-23T20:04:14.8941333Z 
+2026-04-23T20:04:14.8964316Z * Where:
+2026-04-23T20:04:14.8965008Z Build file '/home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/build.gradle' line: 2
+2026-04-23T20:04:14.8965596Z 
+2026-04-23T20:04:14.8965718Z * What went wrong:
+2026-04-23T20:04:14.8966100Z Plugin [id: 'fabric-loom', version: '1.7.11'] was not found in any of the following sources:
+2026-04-23T20:04:14.8966472Z 
+2026-04-23T20:04:14.8967040Z - Gradle Core Plugins (not a core plugin. For more available plugins, please refer to https://docs.gradle.org/8.8/userguide/plugin_reference.html in the Gradle documentation.)
+2026-04-23T20:04:14.8967875Z - Included Builds (No included builds contain this plugin)
+2026-04-23T20:04:14.8968413Z - Plugin Repositories (could not resolve plugin artifact 'fabric-loom:fabric-loom.gradle.plugin:1.7.11')
+2026-04-23T20:04:14.8968903Z   Searched in the following repositories:
+2026-04-23T20:04:14.8969208Z     MavenLocal(file:/home/runner/.m2/repository)
+2026-04-23T20:04:14.8969511Z     maven(https://maven.fabricmc.net/)
+2026-04-23T20:04:14.8969807Z     maven2(https://maven.neoforged.net/releases)
+2026-04-23T20:04:14.8970078Z     MavenRepo
+2026-04-23T20:04:14.8970284Z     Gradle Central Plugin Repository
+2026-04-23T20:04:14.8970454Z 
+2026-04-23T20:04:14.8970537Z * Try:
+2026-04-23T20:04:14.8970780Z > Run with --stacktrace option to get the stack trace.
+2026-04-23T20:04:14.8971175Z > Run with --info or --debug option to get more log output.
+2026-04-23T20:04:14.8971486Z > Run with --scan to get full insights.
+2026-04-23T20:04:14.8971805Z > Get more help at https://help.gradle.org.
+2026-04-23T20:04:14.8971998Z 
+2026-04-23T20:04:14.8972087Z BUILD FAILED in 7s
+2026-04-23T20:04:15.2539329Z ##[error]Process completed with exit code 1.
+2026-04-23T20:04:15.2648163Z Post job cleanup.
+2026-04-23T20:04:15.4407374Z Post job cleanup.
+2026-04-23T20:04:15.5330775Z [command]/usr/bin/git version
+2026-04-23T20:04:15.5366130Z git version 2.53.0
+2026-04-23T20:04:15.5406110Z Temporarily overriding HOME='/home/runner/work/_temp/f5a19081-8ee7-449b-8f1c-849f2ec2ffdc' before making global git config changes
+2026-04-23T20:04:15.5407042Z Adding repository directory to the temporary git global config as a safe directory
+2026-04-23T20:04:15.5411753Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod
+2026-04-23T20:04:15.5446539Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-04-23T20:04:15.5478674Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-04-23T20:04:15.5713588Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-04-23T20:04:15.5735062Z http.https://github.com/.extraheader
+2026-04-23T20:04:15.5746961Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-04-23T20:04:15.5777553Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-04-23T20:04:15.6009866Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-04-23T20:04:15.6041464Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-04-23T20:04:15.6384214Z Cleaning up orphan processes
+2026-04-23T20:04:15.6678957Z Terminate orphan process: pid (2337) (java)
+2026-04-23T20:04:15.6692649Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v4, actions/setup-java@v4. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

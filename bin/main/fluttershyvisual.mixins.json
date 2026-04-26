@@ -1,0 +1,35 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "ru.fluttershy.visual.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "MixinInGameHud",
+    "MixinEntityRenderer",
+    "MixinItemRenderer",
+    "MixinGameRenderer",
+    "MixinWorldRenderer",
+    "MixinClientPlayerEntity",
+    "MixinClientPlayNetworkHandler",
+    "MixinHandledScreen",
+    "MixinKeyboard",
+    "MixinMouse",
+    "MixinLivingEntityRenderer"
+  ],
+  "client": [
+    "MixinInGameHud",
+    "MixinEntityRenderer",
+    "MixinItemRenderer",
+    "MixinGameRenderer",
+    "MixinWorldRenderer",
+    "MixinClientPlayerEntity",
+    "MixinClientPlayNetworkHandler",
+    "MixinHandledScreen",
+    "MixinKeyboard",
+    "MixinMouse",
+    "MixinLivingEntityRenderer"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
