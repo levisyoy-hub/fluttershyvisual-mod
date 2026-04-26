@@ -57,7 +57,7 @@ java {
 
 jar {
 	from("LICENSE") {
-		rename it, "${it}_${project.archivesBaseName}"
+		rename { String fileName -> "${fileName}_${project.archivesBaseName}" }
 	}
 }
 
