@@ -21,6 +21,9 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x gradlew
       
+      - name: Clean gradle cache
+        run: rm -rf ~/.gradle/caches ~/.gradle/wrapper
+      
       - name: Verify gradle wrapper
         run: ls -la gradle/wrapper/gradle-wrapper.jar
       
