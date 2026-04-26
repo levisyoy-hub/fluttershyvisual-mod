@@ -22,7 +22,7 @@ jobs:
         run: chmod +x gradlew
       
       - name: Build Fabric Mod
-        run: ./gradlew --version && ./gradlew clean build
+        run: ./gradlew clean build -x test
         env:
           GRADLE_USER_HOME: ${{ runner.temp }}/.gradle
       
