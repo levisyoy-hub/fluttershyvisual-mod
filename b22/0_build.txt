@@ -1,0 +1,375 @@
+﻿2026-04-26T14:17:59.4693590Z Current runner version: '2.334.0'
+2026-04-26T14:17:59.4718285Z ##[group]Runner Image Provisioner
+2026-04-26T14:17:59.4719108Z Hosted Compute Agent
+2026-04-26T14:17:59.4719589Z Version: 20260213.493
+2026-04-26T14:17:59.4720152Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+2026-04-26T14:17:59.4720820Z Build Date: 2026-02-13T00:28:41Z
+2026-04-26T14:17:59.4721439Z Worker ID: {a05054c6-4181-4930-967c-2ee2bfaa2110}
+2026-04-26T14:17:59.4722133Z Azure Region: westus3
+2026-04-26T14:17:59.4722625Z ##[endgroup]
+2026-04-26T14:17:59.4723891Z ##[group]Operating System
+2026-04-26T14:17:59.4724422Z Ubuntu
+2026-04-26T14:17:59.4724895Z 24.04.4
+2026-04-26T14:17:59.4725342Z LTS
+2026-04-26T14:17:59.4725772Z ##[endgroup]
+2026-04-26T14:17:59.4726247Z ##[group]Runner Image
+2026-04-26T14:17:59.4726953Z Image: ubuntu-24.04
+2026-04-26T14:17:59.4727458Z Version: 20260413.86.1
+2026-04-26T14:17:59.4728592Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260413.86/images/ubuntu/Ubuntu2404-Readme.md
+2026-04-26T14:17:59.4729817Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260413.86
+2026-04-26T14:17:59.4730624Z ##[endgroup]
+2026-04-26T14:17:59.4731604Z ##[group]GITHUB_TOKEN Permissions
+2026-04-26T14:17:59.4733399Z Contents: read
+2026-04-26T14:17:59.4733946Z Metadata: read
+2026-04-26T14:17:59.4734405Z Packages: read
+2026-04-26T14:17:59.4734840Z ##[endgroup]
+2026-04-26T14:17:59.4737193Z Secret source: Actions
+2026-04-26T14:17:59.4737802Z Prepare workflow directory
+2026-04-26T14:17:59.5045798Z Prepare all required actions
+2026-04-26T14:17:59.5084158Z Getting action download info
+2026-04-26T14:17:59.9597978Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2026-04-26T14:18:00.0685561Z Download action repository 'actions/setup-java@v4' (SHA:c1e323688fd81a25caa38c78aa6df2d33d3e20d9)
+2026-04-26T14:18:01.1786210Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-04-26T14:18:01.3782893Z Complete job name: build
+2026-04-26T14:18:01.4591400Z ##[group]Run actions/checkout@v4
+2026-04-26T14:18:01.4592674Z with:
+2026-04-26T14:18:01.4593627Z   repository: levisyoy-hub/fluttershyvisual-mod
+2026-04-26T14:18:01.4595007Z   token: ***
+2026-04-26T14:18:01.4595790Z   ssh-strict: true
+2026-04-26T14:18:01.4596584Z   ssh-user: git
+2026-04-26T14:18:01.4597615Z   persist-credentials: true
+2026-04-26T14:18:01.4598536Z   clean: true
+2026-04-26T14:18:01.4599335Z   sparse-checkout-cone-mode: true
+2026-04-26T14:18:01.4600357Z   fetch-depth: 1
+2026-04-26T14:18:01.4601125Z   fetch-tags: false
+2026-04-26T14:18:01.4601974Z   show-progress: true
+2026-04-26T14:18:01.4602809Z   lfs: false
+2026-04-26T14:18:01.4603598Z   submodules: false
+2026-04-26T14:18:01.4604418Z   set-safe-directory: true
+2026-04-26T14:18:01.4605633Z ##[endgroup]
+2026-04-26T14:18:01.5802640Z Syncing repository: levisyoy-hub/fluttershyvisual-mod
+2026-04-26T14:18:01.5805363Z ##[group]Getting Git version info
+2026-04-26T14:18:01.5807167Z Working directory is '/home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod'
+2026-04-26T14:18:01.5809242Z [command]/usr/bin/git version
+2026-04-26T14:18:01.5819818Z git version 2.53.0
+2026-04-26T14:18:01.5845507Z ##[endgroup]
+2026-04-26T14:18:01.5868952Z Temporarily overriding HOME='/home/runner/work/_temp/bd5667fe-11e1-4e12-95da-1fdd3c2983e4' before making global git config changes
+2026-04-26T14:18:01.5873237Z Adding repository directory to the temporary git global config as a safe directory
+2026-04-26T14:18:01.5877392Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod
+2026-04-26T14:18:01.5904933Z Deleting the contents of '/home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod'
+2026-04-26T14:18:01.5908828Z ##[group]Initializing the repository
+2026-04-26T14:18:01.5913759Z [command]/usr/bin/git init /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod
+2026-04-26T14:18:01.5984921Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-04-26T14:18:01.5988516Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-04-26T14:18:01.5991270Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-04-26T14:18:01.5993539Z hint: call:
+2026-04-26T14:18:01.5994647Z hint:
+2026-04-26T14:18:01.5995985Z hint: 	git config --global init.defaultBranch <name>
+2026-04-26T14:18:01.5997973Z hint:
+2026-04-26T14:18:01.5999695Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-04-26T14:18:01.6002394Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-04-26T14:18:01.6004723Z hint:
+2026-04-26T14:18:01.6005473Z hint: 	git branch -m <name>
+2026-04-26T14:18:01.6006281Z hint:
+2026-04-26T14:18:01.6007552Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-04-26T14:18:01.6010297Z Initialized empty Git repository in /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/.git/
+2026-04-26T14:18:01.6015039Z [command]/usr/bin/git remote add origin https://github.com/levisyoy-hub/fluttershyvisual-mod
+2026-04-26T14:18:01.6027563Z ##[endgroup]
+2026-04-26T14:18:01.6029707Z ##[group]Disabling automatic garbage collection
+2026-04-26T14:18:01.6031720Z [command]/usr/bin/git config --local gc.auto 0
+2026-04-26T14:18:01.6055489Z ##[endgroup]
+2026-04-26T14:18:01.6057838Z ##[group]Setting up auth
+2026-04-26T14:18:01.6063320Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-04-26T14:18:01.6089859Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-04-26T14:18:01.6317683Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-04-26T14:18:01.6345704Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-04-26T14:18:01.6511484Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-04-26T14:18:01.6538379Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-04-26T14:18:01.6715223Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-04-26T14:18:01.6745700Z ##[endgroup]
+2026-04-26T14:18:01.6748096Z ##[group]Fetching the repository
+2026-04-26T14:18:01.6756931Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +1e444039e99747e18a6cef4c3b4052402b51390b:refs/remotes/origin/main
+2026-04-26T14:18:04.8283396Z From https://github.com/levisyoy-hub/fluttershyvisual-mod
+2026-04-26T14:18:04.8303727Z  * [new ref]         1e444039e99747e18a6cef4c3b4052402b51390b -> origin/main
+2026-04-26T14:18:04.8305366Z ##[endgroup]
+2026-04-26T14:18:04.8305973Z ##[group]Determining the checkout info
+2026-04-26T14:18:04.8307930Z ##[endgroup]
+2026-04-26T14:18:04.8312901Z [command]/usr/bin/git sparse-checkout disable
+2026-04-26T14:18:04.8345623Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-04-26T14:18:04.8365425Z ##[group]Checking out the ref
+2026-04-26T14:18:04.8370231Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-04-26T14:18:05.4547786Z Switched to a new branch 'main'
+2026-04-26T14:18:05.4548460Z branch 'main' set up to track 'origin/main'.
+2026-04-26T14:18:05.4573591Z ##[endgroup]
+2026-04-26T14:18:05.4608672Z [command]/usr/bin/git log -1 --format=%H
+2026-04-26T14:18:05.4629295Z 1e444039e99747e18a6cef4c3b4052402b51390b
+2026-04-26T14:18:05.4847312Z ##[group]Run actions/setup-java@v4
+2026-04-26T14:18:05.4847617Z with:
+2026-04-26T14:18:05.4847784Z   java-version: 21
+2026-04-26T14:18:05.4847968Z   distribution: temurin
+2026-04-26T14:18:05.4848155Z   java-package: jdk
+2026-04-26T14:18:05.4848538Z   check-latest: false
+2026-04-26T14:18:05.4848727Z   server-id: github
+2026-04-26T14:18:05.4848909Z   server-username: GITHUB_ACTOR
+2026-04-26T14:18:05.4849133Z   server-password: GITHUB_TOKEN
+2026-04-26T14:18:05.4849350Z   overwrite-settings: true
+2026-04-26T14:18:05.4849558Z   job-status: success
+2026-04-26T14:18:05.4849894Z   token: ***
+2026-04-26T14:18:05.4850075Z ##[endgroup]
+2026-04-26T14:18:05.6723797Z ##[group]Installed distributions
+2026-04-26T14:18:05.7080020Z Resolved Java 21.0.10+7 from tool-cache
+2026-04-26T14:18:05.7080953Z Setting Java 21.0.10+7 as the default
+2026-04-26T14:18:05.7092569Z Creating toolchains.xml for JDK version 21 from temurin
+2026-04-26T14:18:05.7161085Z Writing to /home/runner/.m2/toolchains.xml
+2026-04-26T14:18:05.7161640Z 
+2026-04-26T14:18:05.7161773Z Java configuration:
+2026-04-26T14:18:05.7163201Z   Distribution: temurin
+2026-04-26T14:18:05.7163610Z   Version: 21.0.10+7
+2026-04-26T14:18:05.7164328Z   Path: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.10-7/x64
+2026-04-26T14:18:05.7164969Z 
+2026-04-26T14:18:05.7165564Z ##[endgroup]
+2026-04-26T14:18:05.7181137Z Creating settings.xml with server-id: github
+2026-04-26T14:18:05.7188226Z Writing to /home/runner/.m2/settings.xml
+2026-04-26T14:18:05.7267987Z ##[group]Run chmod +x gradlew
+2026-04-26T14:18:05.7268308Z [36;1mchmod +x gradlew[0m
+2026-04-26T14:18:05.7286463Z shell: /usr/bin/bash -e {0}
+2026-04-26T14:18:05.7286874Z env:
+2026-04-26T14:18:05.7287313Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.10-7/x64
+2026-04-26T14:18:05.7287847Z   JAVA_HOME_21_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.10-7/x64
+2026-04-26T14:18:05.7288170Z ##[endgroup]
+2026-04-26T14:18:05.7399422Z ##[group]Run ./gradlew clean build -x test
+2026-04-26T14:18:05.7399734Z [36;1m./gradlew clean build -x test[0m
+2026-04-26T14:18:05.7412581Z shell: /usr/bin/bash -e {0}
+2026-04-26T14:18:05.7412798Z env:
+2026-04-26T14:18:05.7413074Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.10-7/x64
+2026-04-26T14:18:05.7413519Z   JAVA_HOME_21_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21.0.10-7/x64
+2026-04-26T14:18:05.7413891Z   GRADLE_USER_HOME: /home/runner/work/_temp/.gradle
+2026-04-26T14:18:05.7414141Z ##[endgroup]
+2026-04-26T14:18:06.6423164Z Downloading https://services.gradle.org/distributions/gradle-8.10-bin.zip
+2026-04-26T14:18:09.6361782Z .............10%.............20%.............30%.............40%.............50%.............60%.............70%.............80%.............90%.............100%
+2026-04-26T14:18:10.7920305Z 
+2026-04-26T14:18:10.7921132Z Welcome to Gradle 8.10!
+2026-04-26T14:18:10.7921412Z 
+2026-04-26T14:18:10.7921772Z Here are the highlights of this release:
+2026-04-26T14:18:10.7922346Z  - Support for Java 23
+2026-04-26T14:18:10.7923008Z  - Faster configuration cache
+2026-04-26T14:18:10.7924143Z  - Better configuration cache reports
+2026-04-26T14:18:10.7924442Z 
+2026-04-26T14:18:10.7931280Z For more details see https://docs.gradle.org/8.10/release-notes.html
+2026-04-26T14:18:10.7931890Z 
+2026-04-26T14:18:10.9913786Z Starting a Gradle Daemon (subsequent builds will be faster)
+2026-04-26T14:18:25.9925338Z 
+2026-04-26T14:18:25.9954184Z > Configure project :
+2026-04-26T14:18:25.9954833Z Fabric Loom: 1.8.11
+2026-04-26T14:18:32.4937798Z ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2026-04-26T14:18:32.4938515Z Using of the official minecraft mappings is at your own risk!
+2026-04-26T14:18:32.4960086Z Please make sure to read and understand the following license:
+2026-04-26T14:18:32.4960783Z ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2026-04-26T14:18:32.4964445Z # (c) 2020 Microsoft Corporation. These mappings are provided "as-is" and you bear the risk of using them. You may copy and use the mappings for development purposes, but you may not redistribute the mappings complete and unmodified. Microsoft makes no warranties, express or implied, with respect to the mappings provided here.  Use and modification of this document or the source code (in any form) of Minecraft: Java Edition is governed by the Minecraft End User License Agreement available at https://account.mojang.com/documents/minecraft_eula.
+2026-04-26T14:18:32.4968344Z ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2026-04-26T14:18:58.4914877Z :remapping 45 mods from modImplementation (java-api)
+2026-04-26T14:19:00.4913830Z 
+2026-04-26T14:19:00.4914503Z > Task :clean
+2026-04-26T14:19:18.1922150Z 
+2026-04-26T14:19:18.1922834Z > Task :compileJava
+2026-04-26T14:19:18.1924418Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/FluttershyVisual.java:7: error: class FsvMod is public, should be declared in a file named FsvMod.java
+2026-04-26T14:19:18.1938005Z public class FsvMod implements ModInitializer {
+2026-04-26T14:19:18.1938789Z        ^
+2026-04-26T14:19:18.1940099Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/FsvMod.java:13: error: duplicate class: ru.fluttershy.visual.FsvMod
+2026-04-26T14:19:18.1941689Z public class FsvMod implements ModInitializer {
+2026-04-26T14:19:18.1942311Z        ^
+2026-04-26T14:19:18.1943446Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/FsvClientMod.java:6: error: cannot find symbol
+2026-04-26T14:19:18.1944752Z import net.minecraft.client.MinecraftClient;
+2026-04-26T14:19:18.1945326Z                            ^
+2026-04-26T14:19:18.1945830Z   symbol:   class MinecraftClient
+2026-04-26T14:19:18.1946402Z   location: package net.minecraft.client
+2026-04-26T14:19:18.1948585Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/FsvClientMod.java:7: error: package net.minecraft.client.option does not exist
+2026-04-26T14:19:18.1950308Z import net.minecraft.client.option.KeyBinding;
+2026-04-26T14:19:18.1950941Z                                   ^
+2026-04-26T14:19:18.1952134Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/FsvClientMod.java:8: error: package net.minecraft.client.util does not exist
+2026-04-26T14:19:18.1953622Z import net.minecraft.client.util.InputUtil;
+2026-04-26T14:19:18.1954210Z                                 ^
+2026-04-26T14:19:18.1955609Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/FsvClientMod.java:12: error: package ru.fluttershy.visual.ui does not exist
+2026-04-26T14:19:18.1959535Z import ru.fluttershy.visual.ui.ClickGUI;
+2026-04-26T14:19:18.1978671Z                               ^
+2026-04-26T14:19:18.1979954Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/FsvClientMod.java:15: error: cannot find symbol
+2026-04-26T14:19:18.2007679Z 	public static final KeyBinding OPEN_GUI_KEY = KeyBindingHelper.registerKeyBinding(
+2026-04-26T14:19:18.2037394Z 	                    ^
+2026-04-26T14:19:18.2067557Z   symbol:   class KeyBinding
+2026-04-26T14:19:18.2068019Z   location: class FsvClientMod
+2026-04-26T14:19:18.2069099Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/mixin/MixinMouse.java:3: error: package net.minecraft.client.input does not exist
+2026-04-26T14:19:18.2070239Z import net.minecraft.client.input.Mouse;
+2026-04-26T14:19:18.2070655Z                                  ^
+2026-04-26T14:19:18.2071846Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/mixin/MixinGameRenderer.java:3: error: package net.minecraft.client.render does not exist
+2026-04-26T14:19:18.2073207Z import net.minecraft.client.render.GameRenderer;
+2026-04-26T14:19:18.2073659Z                                   ^
+2026-04-26T14:19:18.2074883Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/mixin/MixinWorldRenderer.java:3: error: package net.minecraft.client.render does not exist
+2026-04-26T14:19:18.2076132Z import net.minecraft.client.render.WorldRenderer;
+2026-04-26T14:19:18.2076531Z                                   ^
+2026-04-26T14:19:18.2078208Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/mixin/MixinInGameHud.java:3: error: package net.minecraft.client.gui.hud does not exist
+2026-04-26T14:19:18.2079429Z import net.minecraft.client.gui.hud.InGameHud;
+2026-04-26T14:19:18.2079867Z                                    ^
+2026-04-26T14:19:18.2081008Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/mixin/MixinInGameHud.java:4: error: package net.minecraft.client.util.math does not exist
+2026-04-26T14:19:18.2082289Z import net.minecraft.client.util.math.MatrixStack;
+2026-04-26T14:19:18.2082759Z                                      ^
+2026-04-26T14:19:18.2083745Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/mixin/MixinInGameHud.java:9: error: cannot find symbol
+2026-04-26T14:19:18.2084876Z import net.minecraft.client.gui.DrawContext;
+2026-04-26T14:19:18.2085305Z                                ^
+2026-04-26T14:19:18.2085642Z   symbol:   class DrawContext
+2026-04-26T14:19:18.2085998Z   location: package net.minecraft.client.gui
+2026-04-26T14:19:18.2087117Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/mixin/MixinInGameHud.java:14: error: cannot find symbol
+2026-04-26T14:19:18.2088352Z     private void onRender(DrawContext context, float tickDelta, CallbackInfo ci) {
+2026-04-26T14:19:18.2088950Z                           ^
+2026-04-26T14:19:18.2089294Z   symbol:   class DrawContext
+2026-04-26T14:19:18.2089655Z   location: class MixinInGameHud
+2026-04-26T14:19:18.2091134Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/mixin/MixinClientPlayerEntity.java:3: error: package net.minecraft.client.network does not exist
+2026-04-26T14:19:18.2092555Z import net.minecraft.client.network.ClientPlayerEntity;
+2026-04-26T14:19:18.2093036Z                                    ^
+2026-04-26T14:19:18.2094279Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/mixin/MixinItemRenderer.java:3: error: package net.minecraft.client.render.item does not exist
+2026-04-26T14:19:18.2095735Z import net.minecraft.client.render.item.ItemRenderer;
+2026-04-26T14:19:18.2096267Z                                        ^
+2026-04-26T14:19:18.2127911Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/mixin/MixinKeyboard.java:3: error: package net.minecraft.client.input does not exist
+2026-04-26T14:19:18.2129351Z import net.minecraft.client.input.Keyboard;
+2026-04-26T14:19:18.2129815Z                                  ^
+2026-04-26T14:19:18.2131161Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/mixin/MixinLivingEntityRenderer.java:3: error: package net.minecraft.client.render.entity does not exist
+2026-04-26T14:19:18.2132708Z import net.minecraft.client.render.entity.LivingEntityRenderer;
+2026-04-26T14:19:18.2133298Z                                          ^
+2026-04-26T14:19:18.2134622Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/mixin/MixinClientPlayNetworkHandler.java:3: error: package net.minecraft.client.network does not exist
+2026-04-26T14:19:18.2136145Z import net.minecraft.client.network.ClientPlayNetworkHandler;
+2026-04-26T14:19:18.2136975Z                                    ^
+2026-04-26T14:19:18.2138294Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/mixin/MixinClientPlayNetworkHandler.java:4: error: package net.minecraft.network.packet does not exist
+2026-04-26T14:19:18.2139613Z import net.minecraft.network.packet.Packet;
+2026-04-26T14:19:18.2140045Z                                    ^
+2026-04-26T14:19:18.2141308Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/mixin/MixinEntityRenderer.java:3: error: package net.minecraft.client.render.entity does not exist
+2026-04-26T14:19:18.2143022Z import net.minecraft.client.render.entity.EntityRenderer;
+2026-04-26T14:19:18.2143528Z                                          ^
+2026-04-26T14:19:18.2144723Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/mixin/MixinEntityRenderer.java:4: error: package net.minecraft.entity does not exist
+2026-04-26T14:19:18.2145967Z import net.minecraft.entity.Entity;
+2026-04-26T14:19:18.2146369Z                            ^
+2026-04-26T14:19:18.2147558Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/mixin/MixinEntityRenderer.java:13: error: cannot find symbol
+2026-04-26T14:19:18.2149063Z     private void onRender(Entity entity, double x, double y, double z, float yaw, float tickDelta, CallbackInfo ci) {
+2026-04-26T14:19:18.2149866Z                           ^
+2026-04-26T14:19:18.2150206Z   symbol:   class Entity
+2026-04-26T14:19:18.2150570Z   location: class MixinEntityRenderer
+2026-04-26T14:19:18.2151930Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/mixin/MixinHandledScreen.java:3: error: package net.minecraft.client.gui.screen.ingame does not exist
+2026-04-26T14:19:18.2153396Z import net.minecraft.client.gui.screen.ingame.HandledScreen;
+2026-04-26T14:19:18.2153929Z                                              ^
+2026-04-26T14:19:18.2155153Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/module/render/ESP3D.java:3: error: package net.minecraft.entity does not exist
+2026-04-26T14:19:18.2156387Z import net.minecraft.entity.Entity;
+2026-04-26T14:19:18.2197359Z                            ^
+2026-04-26T14:19:18.2198638Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/module/render/ESP3D.java:4: error: package net.minecraft.entity does not exist
+2026-04-26T14:19:18.2199850Z import net.minecraft.entity.LivingEntity;
+2026-04-26T14:19:18.2200237Z                            ^
+2026-04-26T14:19:18.2201077Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/module/render/ESP3D.java:32: error: cannot find symbol
+2026-04-26T14:19:18.2202115Z     public boolean shouldRenderPlayer(Entity entity) {
+2026-04-26T14:19:18.2202564Z                                       ^
+2026-04-26T14:19:18.2202947Z   symbol:   class Entity
+2026-04-26T14:19:18.2203270Z   location: class ESP3D
+2026-04-26T14:19:18.2204253Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/mixin/MixinMouse.java:9: error: cannot find symbol
+2026-04-26T14:19:18.2205244Z @Mixin(Mouse.class)
+2026-04-26T14:19:18.2205539Z        ^
+2026-04-26T14:19:18.2205792Z   symbol: class Mouse
+2026-04-26T14:19:18.2206950Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/mixin/MixinGameRenderer.java:9: error: cannot find symbol
+2026-04-26T14:19:18.2208061Z @Mixin(GameRenderer.class)
+2026-04-26T14:19:18.2208407Z        ^
+2026-04-26T14:19:18.2208668Z   symbol: class GameRenderer
+2026-04-26T14:19:18.2209680Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/mixin/MixinWorldRenderer.java:9: error: cannot find symbol
+2026-04-26T14:19:18.2210832Z @Mixin(WorldRenderer.class)
+2026-04-26T14:19:18.2211173Z        ^
+2026-04-26T14:19:18.2211471Z   symbol: class WorldRenderer
+2026-04-26T14:19:18.2212449Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/mixin/MixinInGameHud.java:11: error: cannot find symbol
+2026-04-26T14:19:18.2213501Z @Mixin(InGameHud.class)
+2026-04-26T14:19:18.2213829Z        ^
+2026-04-26T14:19:18.2214127Z   symbol: class InGameHud
+2026-04-26T14:19:18.2215218Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/mixin/MixinClientPlayerEntity.java:9: error: cannot find symbol
+2026-04-26T14:19:18.2216426Z @Mixin(ClientPlayerEntity.class)
+2026-04-26T14:19:18.2216949Z        ^
+2026-04-26T14:19:18.2217483Z   symbol: class ClientPlayerEntity
+2026-04-26T14:19:18.2218612Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/mixin/MixinItemRenderer.java:9: error: cannot find symbol
+2026-04-26T14:19:18.2219724Z @Mixin(ItemRenderer.class)
+2026-04-26T14:19:18.2220045Z        ^
+2026-04-26T14:19:18.2220333Z   symbol: class ItemRenderer
+2026-04-26T14:19:18.2221364Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/mixin/MixinKeyboard.java:9: error: cannot find symbol
+2026-04-26T14:19:18.2222412Z @Mixin(Keyboard.class)
+2026-04-26T14:19:18.2222716Z        ^
+2026-04-26T14:19:18.2223009Z   symbol: class Keyboard
+2026-04-26T14:19:18.2224103Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/mixin/MixinLivingEntityRenderer.java:9: error: cannot find symbol
+2026-04-26T14:19:18.2225294Z @Mixin(LivingEntityRenderer.class)
+2026-04-26T14:19:18.2225682Z        ^
+2026-04-26T14:19:18.2225990Z   symbol: class LivingEntityRenderer
+2026-04-26T14:19:18.2257535Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/mixin/MixinClientPlayNetworkHandler.java:10: error: cannot find symbol
+2026-04-26T14:19:18.2258839Z @Mixin(ClientPlayNetworkHandler.class)
+2026-04-26T14:19:18.2259264Z        ^
+2026-04-26T14:19:18.2259560Z   symbol: class ClientPlayNetworkHandler
+2026-04-26T14:19:18.2260634Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/mixin/MixinEntityRenderer.java:10: error: cannot find symbol
+2026-04-26T14:19:18.2261722Z @Mixin(EntityRenderer.class)
+2026-04-26T14:19:18.2262312Z        ^
+2026-04-26T14:19:18.2262617Z   symbol: class EntityRenderer
+2026-04-26T14:19:18.2263673Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/mixin/MixinHandledScreen.java:9: error: cannot find symbol
+2026-04-26T14:19:18.2264751Z @Mixin(HandledScreen.class)
+2026-04-26T14:19:18.2265069Z        ^
+2026-04-26T14:19:18.2265338Z   symbol: class HandledScreen
+2026-04-26T14:19:18.2266290Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/FsvClientMod.java:16: error: cannot find symbol
+2026-04-26T14:19:18.2267932Z 		new KeyBinding("key.fluttershyvisual.gui", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_RIGHT_SHIFT, "category.fluttershyvisual")
+2026-04-26T14:19:18.2268769Z 		    ^
+2026-04-26T14:19:18.2269039Z   symbol:   class KeyBinding
+2026-04-26T14:19:18.2269393Z   location: class FsvClientMod
+2026-04-26T14:19:18.2270449Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/FsvClientMod.java:16: error: package InputUtil does not exist
+2026-04-26T14:19:18.2271973Z 		new KeyBinding("key.fluttershyvisual.gui", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_RIGHT_SHIFT, "category.fluttershyvisual")
+2026-04-26T14:19:18.2272855Z 		                                                    ^
+2026-04-26T14:19:18.2273851Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/FsvClientMod.java:25: error: cannot find symbol
+2026-04-26T14:19:18.2274814Z 				client.setScreen(new ClickGUI());
+2026-04-26T14:19:18.2275197Z 				                     ^
+2026-04-26T14:19:18.2275566Z   symbol:   class ClickGUI
+2026-04-26T14:19:18.2275932Z   location: class FsvClientMod
+2026-04-26T14:19:18.2277064Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/FsvClientMod.java:31: error: cannot find symbol
+2026-04-26T14:19:18.2278088Z 			if (client.isRunning() && client.world == null) {
+2026-04-26T14:19:18.2278499Z 			                                ^
+2026-04-26T14:19:18.2278856Z   symbol:   variable world
+2026-04-26T14:19:18.2279214Z   location: variable client of type Minecraft
+2026-04-26T14:19:18.2915379Z /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod/src/main/java/ru/fluttershy/visual/module/render/ESP3D.java:33: error: cannot find symbol
+2026-04-26T14:19:18.2937795Z         return entity instanceof LivingEntity && entity != null;
+2026-04-26T14:19:18.2967544Z                                  ^
+2026-04-26T14:19:18.2997706Z   symbol:   class LivingEntity
+2026-04-26T14:19:18.3007393Z   location: class ESP3D
+2026-04-26T14:19:18.3912928Z 43 errors
+2026-04-26T14:19:18.3914069Z 
+2026-04-26T14:19:18.3914243Z FAILURE: Build failed with an exception.
+2026-04-26T14:19:18.3914571Z 
+2026-04-26T14:19:18.3914690Z * What went wrong:
+2026-04-26T14:19:18.3915036Z Execution failed for task ':compileJava'.
+2026-04-26T14:19:18.3915554Z > Compilation failed; see the compiler error output for details.
+2026-04-26T14:19:18.3915972Z 
+2026-04-26T14:19:18.3916075Z * Try:
+2026-04-26T14:19:18.3916268Z 
+2026-04-26T14:19:18.3916405Z > Task :compileJava FAILED
+2026-04-26T14:19:18.3916961Z > Run with --info option to get more log output.
+2026-04-26T14:19:18.3917430Z > Run with --scan to get full insights.
+2026-04-26T14:19:18.3917707Z 
+2026-04-26T14:19:18.3918351Z Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+2026-04-26T14:19:18.3918944Z 
+2026-04-26T14:19:18.3918952Z 
+2026-04-26T14:19:18.3919433Z BUILD FAILED in 1m 12s
+2026-04-26T14:19:18.3928471Z You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+2026-04-26T14:19:18.3929666Z 
+2026-04-26T14:19:18.3930682Z For more on this, please refer to https://docs.gradle.org/8.10/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+2026-04-26T14:19:18.3931931Z 2 actionable tasks: 2 executed
+2026-04-26T14:19:18.7802753Z ##[error]Process completed with exit code 1.
+2026-04-26T14:19:18.7904465Z Post job cleanup.
+2026-04-26T14:19:18.9591913Z Post job cleanup.
+2026-04-26T14:19:19.0484626Z [command]/usr/bin/git version
+2026-04-26T14:19:19.0517796Z git version 2.53.0
+2026-04-26T14:19:19.0558461Z Temporarily overriding HOME='/home/runner/work/_temp/5be5447c-411a-4ee3-85c5-8d6915f6505e' before making global git config changes
+2026-04-26T14:19:19.0560525Z Adding repository directory to the temporary git global config as a safe directory
+2026-04-26T14:19:19.0573244Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/fluttershyvisual-mod/fluttershyvisual-mod
+2026-04-26T14:19:19.0604055Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-04-26T14:19:19.0631474Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-04-26T14:19:19.0805022Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-04-26T14:19:19.0822438Z http.https://github.com/.extraheader
+2026-04-26T14:19:19.0833288Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-04-26T14:19:19.0860670Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-04-26T14:19:19.1030204Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-04-26T14:19:19.1055084Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-04-26T14:19:19.1322181Z Cleaning up orphan processes
+2026-04-26T14:19:19.1540653Z Terminate orphan process: pid (2329) (java)
+2026-04-26T14:19:19.1559777Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v4, actions/setup-java@v4. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
