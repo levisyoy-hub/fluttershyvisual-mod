@@ -21,10 +21,15 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x gradlew
       
+      - name: Clear Gradle and Loom cache
+        run: |
+          rm -rf ~/.gradle/loom-cache || true
+          rm -rf ~/.gradle/wrapper || true
+      
       - name: Build Fabric Mod
         run: ./gradlew clean build -x test
         env:
-          GRADLE_USER_HOME: ${{ runner.temp }}/.gradle
+          GRADLE_USER_HOME: ~/.gradle
       
       - name: Upload Artifact
         if: success()
