@@ -21,16 +21,10 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x gradlew
       
-      - name: Clean all caches and build artifacts
-        run: |
-          rm -rf ~/.gradle/caches ~/.gradle/wrapper ~/.gradle/loom-cache .gradle/ build/
-          find ~/.gradle -type d -name "*loom*" -exec rm -rf {} + 2>/dev/null || true
-      
-      - name: Verify gradle wrapper
-        run: ls -la gradle/wrapper/gradle-wrapper.jar
-      
       - name: Build Fabric Mod
         run: ./gradlew --version && ./gradlew clean build
+        env:
+          GRADLE_USER_HOME: ${{ runner.temp }}/.gradle
       
       - name: Upload Artifact
         if: success()
